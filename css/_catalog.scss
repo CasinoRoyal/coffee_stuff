@@ -1,0 +1,54 @@
+.main__catalog {
+
+  &-btn {
+    width: 100%;
+    padding: 7px 0 7px 0;
+    background-color: #ece579;
+    border: none;
+    cursor: pointer;
+  }
+
+}
+
+.catalog {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  list-style: none;
+
+  &--close {
+    display: none;
+  }
+
+  &--open {
+    display: flex;
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 30px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #567348;
+  }
+
+  &__title {
+    padding-left: 10px;
+  }
+
+  &__title:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    transform: translateY(-10px);
+    background-image: url(./image/coffee/2.svg);
+  }
+}

@@ -1,0 +1,86 @@
+.nav {
+  display: flex;
+}
+
+
+.hamburger {
+  align-self: center;
+  display: block;
+  width: 30px;
+  height: 30px;
+  
+  & svg {
+    fill: white;
+  }
+}
+
+
+.sidebar {
+  position: relative;
+  overflow: auto;
+
+  &--close {
+    display: none;
+  }
+
+  &--open {
+    position: absolute;
+    z-index: 1000;
+    background-color: antiquewhite;
+    width: 85%;
+    left: 0;
+    top: 0;
+    height: 100%;
+
+    & + .sidebar__overflow {
+      display: block;
+    }
+  }
+
+  &__overflow {
+    display: none;
+  }
+
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    min-height: 20%;
+    background-color: burlywood;
+    padding: 30px 20px 20px;
+  }
+
+  &__close-btn {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(45deg);
+
+    &:before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 2px;
+      background-color: #fff;
+      transform: rotate(-90deg);
+    }
+  }
+
+  &__catalog {
+    padding: 20px;
+  }
+}
+
+
+.overflow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 500;
+  background-color: rgba(0,0,0, .7);
+}
