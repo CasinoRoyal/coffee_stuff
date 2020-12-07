@@ -5,6 +5,16 @@ html {
 
 ul {
   margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
 }
 
 .btn {
@@ -12,6 +22,18 @@ ul {
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  &--large {
+    font-size: 16px;
+  }
+
+  &--primary {
+    background: #ece579;
+    padding: 5px;
+    border-radius: 3px;
+    width: 90%;
+    color: #171505;
+  }
 }
 
 .icon {
@@ -23,4 +45,8 @@ ul {
   color: #596161; 
   margin: 0;
   margin-bottom: 20px;
+}
+
+main > section:not(:last-child) {
+  margin-bottom: 50px;
 }
