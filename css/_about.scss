@@ -1,0 +1,16 @@
+.about {
+  padding: 20px 10px;
+  background-color: #ece5799e;
+
+  &__company {
+    color: #42688f;
+  }
+
+  &__description {
+
+    & p {
+      margin-bottom: 10px;
+      color: #4b4747;
+    }
+  }
+}

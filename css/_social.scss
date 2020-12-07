@@ -1,0 +1,38 @@
+.social {
+  &__title {
+    margin-bottom: 10px;
+    text-align: center;
+    color: #dfa741;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  &__item {
+
+  }
+
+  &__link {
+    display: block;
+    width: 35px;
+    height: 35px;
+  }
+
+  &__link--telegram {
+    background-image: url(./image/social-media/telegram.svg);
+  }
+
+  &__link--facebook {
+    background-image: url(./image/social-media/facebook.svg);
+  }
+
+  &__link--instagram {
+    background-image: url(./image/social-media/instagram.svg);
+  }  
+} 
