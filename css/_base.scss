@@ -1,6 +1,7 @@
 html {
   height: 100vh;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 ul {
@@ -15,6 +16,11 @@ a {
 
 p {
   margin: 0;
+}
+
+button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
 }
 
 .btn {
@@ -45,6 +51,8 @@ p {
   color: #596161; 
   margin: 0;
   margin-bottom: 20px;
+  font-family: 'Cuprum', sans-serif;
+  font-weight: 500;
 }
 
 main > section {
