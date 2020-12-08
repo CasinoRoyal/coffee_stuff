@@ -4,10 +4,49 @@
   background-color: #1f1f2c;
 
   &__section {
-    
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  &__title {
+    margin: 0;
+    color: #dfb950;
+  }
+
+
+  &__title > a {
+    color: currentColor;
   }
 }
 
-.thanks a {
-  color: #ece579;
+.thanks {
+
+  &__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  & a {
+    color: #ece579;
+  }
+}
+
+
+.cta {
+  width: 100%;
+
+  &__title {
+    color: white;
+  }
+
+
+  &__item {
+
+
+    & a {
+      color: white;
+    }
+  }
 }
