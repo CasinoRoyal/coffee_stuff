@@ -56,10 +56,7 @@
   }
 
   &__price {
-    color: #5b4636;
-    font-family: 'Cuprum', sans-serif;
-    font-size: 22px;
-    font-weight: 500;
+
   }
 
   &__describe {
@@ -70,4 +67,11 @@
     margin: auto;
     font-family: 'Roboto', sans-serif;
   }
+}
+
+.price {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 22px;
+  font-weight: 500;  
+  color: #5b4636;
 }

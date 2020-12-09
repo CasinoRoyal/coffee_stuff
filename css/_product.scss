@@ -1,0 +1,53 @@
+.product {
+  padding: 0 10px;
+
+  &__header {
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__code {
+    text-align: right;
+    font-size: 12px;
+    font-weight: 300;
+    color: #000000db;
+    margin-left: auto;
+
+    & span {
+      font-size: 13px;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__quantity {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+    background-color: #232a2ed1;
+
+    & > .btn {
+      color: #fff;
+    }
+  }
+
+  &__tabs {
+    width: 100%;
+    flex-shrink: 0;
+  }
+
+
+
+
+
+  &__btn {
+    margin: auto;
+    padding: 10px;
+  }
+}

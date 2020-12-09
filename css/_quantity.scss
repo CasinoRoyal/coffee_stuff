@@ -1,0 +1,32 @@
+.quantity {
+  display: flex;
+  width: 100%;
+  padding: 5px;
+
+  &__btn {
+    position: relative;
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+    font-size: 16px;
+    background-color: #ffffff47;
+    border-radius: 3px;
+
+
+    &--small {
+
+    }
+
+    &--large {
+      
+    }
+  }
+
+  &__input {
+    width: 30px;
+    margin: 0 10px;
+    text-align: center;
+    border-radius: 3px;
+    border: none;
+  }
+}
