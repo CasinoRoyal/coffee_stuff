@@ -2,8 +2,6 @@
   padding: 0 10px;
 
   &__container--inline {
-    overflow: auto;
-    padding-bottom: 15px;
   }
 
   &__container--inline > * {
@@ -24,54 +22,4 @@
   &__btn {
     color: #111213;
   }
-}
-
-.card {
-  display: flex;
-
-
-  &__item {
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-    width: 200px;
-  }
-
-  &__item:not(:last-child) {
-    margin-right: 40px;
-  }
-
-
-  &__link {
-    margin-bottom: 20px;
-  }
-
-  &__pic {
-    margin-bottom: 10px;
-  }
-
-  &__title {
-    margin-bottom: 10px;
-    color: #615d61;
-  }
-
-  &__price {
-
-  }
-
-  &__describe {
-    color: #615d61;
-  }
-
-  &__btn {
-    margin: auto;
-    font-family: 'Roboto', sans-serif;
-  }
-}
-
-.price {
-  font-family: 'Cuprum', sans-serif;
-  font-size: 22px;
-  font-weight: 500;  
-  color: #5b4636;
 }

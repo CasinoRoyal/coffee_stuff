@@ -1,0 +1,13 @@
+.breadcrumbs {
+  padding: 10px;
+  color: black;
+  font-size: 12px;
+
+  &__list {
+    display: flex;
+  }
+
+  &__link {
+    color: black;
+  }
+}

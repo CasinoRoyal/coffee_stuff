@@ -1,13 +1,15 @@
-@import './css/_cssreset.scss';
-@import './css/_base.scss';
-@import './css/_header.scss';
-@import './css/_catalog.scss';
-@import './css/_nav.scss';
-@import './css/_widget.scss';
-@import './css/_about.scss';
-@import './css/_advantages.scss';
-@import './css/_footer.scss';
-@import './css/_social.scss';
+@import './css/cssreset';
+@import './css/base';
+@import './css/header';
+@import './css/catalog';
+@import './css/nav';
+@import './css/widget';
+@import './css/about';
+@import './css/advantages';
+@import './css/footer';
+@import './css/social';
 
-@import './css/_product.scss';
-@import './css/_quantity.scss';
+@import './css/product';
+@import './css/quantity';
+@import './css/breadcrumbs';
+@import './css/card';
