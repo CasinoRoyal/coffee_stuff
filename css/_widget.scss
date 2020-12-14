@@ -1,19 +1,6 @@
 .widget {
   padding: 0 10px;
 
-  &__container {
-
-    &--grid > .cards {
-      justify-content: space-around;
-      flex-wrap: wrap;
-      overflow: none;
-    }
-
-    &--inline > .cards {
-      overflow: auto;
-    }
-  }
-
   &__header {
     display: flex;
     justify-content: space-between;

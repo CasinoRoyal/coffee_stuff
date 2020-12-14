@@ -138,16 +138,108 @@
         </ul>
       </div>
 
-      <!-- Sorting, filtering -->
-      <aside class="controls">
-        <label for="sort">Sorting:</label>
-        <select name="sort" class="controls__sort">
-          <option value="asc" selected>Asc</option>
-          <option value="desc">Desc</option>
-        </select>
-      </aside>
 
-      <section class="widget"></section>
+      <section class="widget">
+        <header class="widget__header">
+          <h2 class="title title--square widget__title">Items</h2>
+        </header>
+  
+        <!-- Sorting, filtering -->
+        <aside class="controls">
+          <label for="sort">Sorting:</label>
+          <select name="sort" id="sort" class="controls__sort">
+            <option value="asc" selected>Asc</option>
+            <option value="desc">Desc</option>
+          </select>
+        </aside>
+
+        <div class="widget__container">
+          <ul class="cards cards--grid">
+            <li class="card">
+              <a href="" class="card__link">
+                <div class="card__pic">
+                  <img src="https://picsum.photos/200" alt="product image">
+                </div>
+                <div class="card__body">
+                  <h3 class="title card__title">Title</h3>
+                  <div class="price card__price">
+                    <span class="price__figures">399</span>
+                    <span class="price__currency">$</span>
+                  </div>
+                  <div class="card__panel"></div>
+                </div>
+              </a>
+              <button class="btn btn--primary btn--large card__btn">Buy</button>
+            </li>
+            <li class="card">
+              <a href="" class="card__link">
+                <div class="card__pic">
+                  <img src="https://picsum.photos/200" alt="product image">
+                </div>
+                <div class="card__body">
+                  <h3 class="title card__title">Title</h3>
+                  <div class="price card__price">
+                    <span class="price__figures">399</span>
+                    <span class="price__currency">$</span>
+                  </div>
+                  <div class="card__panel"></div>
+                </div>
+              </a>
+              <button class="btn btn--primary btn--large card__btn">Buy</button>
+            </li>
+            <li class="card">
+              <a href="" class="card__link">
+                <div class="card__pic">
+                  <img src="https://picsum.photos/200" alt="product image">
+                </div>
+                <div class="card__body">
+                  <h3 class="title card__title">Title</h3>
+                  <div class="price card__price">
+                    <span class="price__figures">399</span>
+                    <span class="price__currency">$</span>
+                  </div>
+                  <div class="card__panel"></div>
+                </div>
+              </a>
+              <button class="btn btn--primary btn--large card__btn">Buy</button>
+            </li>
+            <li class="card">
+              <a href="" class="card__link">
+                <div class="card__pic">
+                  <img src="https://picsum.photos/200" alt="product image">
+                </div>
+                <div class="card__body">
+                  <h3 class="title card__title">Title</h3>
+                  <div class="price card__price">
+                    <span class="price__figures">399</span>
+                    <span class="price__currency">$</span>
+                  </div>
+                  <div class="card__panel"></div>
+                </div>
+              </a>
+              <button class="btn btn--primary btn--large card__btn">Buy</button>
+            </li>
+            <li class="card">
+              <a href="" class="card__link">
+                <div class="card__pic">
+                  <img src="https://picsum.photos/200" alt="product image">
+                </div>
+                <div class="card__body">
+                  <h3 class="title card__title">Title</h3>
+                  <div class="price card__price">
+                    <span class="price__figures">399</span>
+                    <span class="price__currency">$</span>
+                  </div>
+                  <div class="card__panel"></div>
+                </div>
+              </a>
+              <button class="btn btn--primary btn--large card__btn">Buy</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="pagination"></div>
     </main>
 
     <!-- FOOTER -->
