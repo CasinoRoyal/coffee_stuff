@@ -3,12 +3,14 @@
   &-btn {
     width: 100%;
     padding: 10px 0 10px 0;
+    border: none;
+    cursor: pointer;
     font-family: 'Cuprum', sans-serif;
     font-size: 18px;
     font-weight: 400;
-    background-color: #ece579;
-    border: none;
-    cursor: pointer;
+    text-transform: uppercase;
+    color: $primary-color;
+    background-color: $secondary-color;
   }
 
 }

@@ -1,7 +1,7 @@
 .header {
   display: flex;
   flex-direction: column;
-  background-color: #e18b8b;
+  background-color: #FFCE00;
   padding: 20px 10px;
 
   &__banner {
@@ -121,5 +121,7 @@
 
 
   &__text {
+    font-family: 'Cuprum', sans-serif;
+    font-size: 20px;
   }
 }

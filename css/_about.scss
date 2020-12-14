@@ -1,16 +1,16 @@
 .about {
   padding: 20px 10px;
-  background-color: #ece5799e;
+  background-color: $primary-color;
 
   &__company {
-    color: #42688f;
+    color: $title-color;
   }
 
   &__description {
 
     & p {
       margin-bottom: 10px;
-      color: #4b4747;
+      color: $text-color;
     }
   }
 }

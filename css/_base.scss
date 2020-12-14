@@ -5,7 +5,10 @@ html {
 }
 
 body {
-  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: $main-background;
 }
 
 ul {
@@ -22,16 +25,14 @@ p {
   margin: 0;
 }
 
-button {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-}
-
 .btn {
-  text-align: center;
   padding: 0;
   border: none;
   cursor: pointer;
+  font-family: 'Cuprum', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  color: $title-color;
   background-color: transparent;
 
   &--large {
@@ -39,11 +40,11 @@ button {
   }
 
   &--primary {
-    background: #ece579;
+    background: $primary-color;
     padding: 5px;
     border-radius: 3px;
     width: 90%;
-    color: #171505;
+    color: $title-color;
   }
 }
 
@@ -53,11 +54,34 @@ button {
 
 
 .title {
-  color: #596161; 
   margin: 0;
   margin-bottom: 20px;
   font-family: 'Cuprum', sans-serif;
   font-weight: 500;
+  color: $title-color; 
+
+  &--square {
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+
+    &::before {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      left: -6px;
+      bottom: 3px;
+      width: 90%;
+      height: 7px;
+      background-color: $primary-color;
+    }
+  }
+
+  &--square-invert {
+    &::before {
+      background-color: #fff;
+    }
+  }
 }
 
 main > section {
