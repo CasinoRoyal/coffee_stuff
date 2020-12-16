@@ -26,7 +26,7 @@
   &--open {
     position: fixed;
     z-index: 1000;
-    background-color: antiquewhite;
+    background-color: $main-background;
     width: 85%;
     left: 0;
     top: 0;
@@ -45,9 +45,10 @@
   &__header {
     display: flex;
     flex-direction: column;
-    min-height: 20%;
-    background-color: burlywood;
-    padding: 30px 20px 20px;
+    justify-content: space-between;
+    min-height: calc(100% / 4);
+    background-color: $primary-color;
+    padding: 35px 20px 20px;
   }
 
   &__close-btn {
@@ -56,7 +57,7 @@
     right: 15px;
     width: 20px;
     height: 2px;
-    background-color: #fff;
+    background-color: #111;
     transform: rotate(45deg);
 
     &:before {
@@ -64,7 +65,7 @@
       display: block;
       width: 20px;
       height: 2px;
-      background-color: #fff;
+      background-color: #111;
       transform: rotate(-90deg);
     }
   }

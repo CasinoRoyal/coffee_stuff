@@ -25,33 +25,44 @@
 
   &--open {
     display: flex;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+
+    background-color: tomato;
+  }
+
+  &__title {
+    text-transform: uppercase;
   }
 
   &__item {
-    position: relative;
-    padding-left: 30px;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
 
     &:not(:last-child) {
-      margin-bottom: 30px;
+      margin-bottom: 10px;  
     }
   }
 
   &__link {
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    color: #567348;
+    color: $text-color;
   }
 
-  &__title {
-    padding-left: 10px;
-  }
-
-  &__title:before {
-    content: '';
-    position: absolute;
-    left: 0;
+  &__icon {
+    fill: #3c4b68;
     width: 30px;
     height: 30px;
-    transform: translateY(-10px);
-    background-image: url(./image/coffee/2.svg);
+  }
+
+  &__name{
+    font-family: 'Cuprum', sans-serif;
+    font-size: 18px;
+    margin-left: 15px;
   }
 }
