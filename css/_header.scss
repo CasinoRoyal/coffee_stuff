@@ -1,8 +1,16 @@
+.header-top{
+  min-height: 20px;
+  min-width: 1px;
+  background-color: $primary-color;
+}
+
 .header {
+  position: sticky;
   display: flex;
   flex-direction: column;
-  background-color: #FFCE00;
-  padding: 20px 10px;
+  background-color: $primary-color;
+  padding: 0 10px 20px;
+  transition: all 0.1s ease-out;
 
   &__banner {
     display: none;
@@ -11,6 +19,38 @@
   &__content {
     display: flex;
     flex-wrap: wrap;
+
+    &--shrink {
+
+    }
+  }
+
+  &--sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding-bottom: 5px;
+    border-bottom: 1px solid $secondary-color;
+
+
+    & .logo {
+      position: absolute;
+      width: 0;
+      height: 0;
+      font-size: 0;
+      visibility: hidden;
+    }
+
+    & .search {
+      margin: 0 auto;
+      flex-grow: 0;
+    }
+
+    & .cart {
+      margin-left: auto;
+      order: 3;
+    }
+
   }
 }
 
