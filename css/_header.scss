@@ -5,11 +5,11 @@
 }
 
 .header {
-  position: sticky;
+  position: static;
   display: flex;
   flex-direction: column;
   background-color: $primary-color;
-  padding: 0 10px 20px;
+  padding: 0 10px 10px;
   transition: all 0.1s ease-out;
 
   &__banner {
@@ -30,9 +30,8 @@
     top: 0;
     z-index: 1000;
     padding-bottom: 5px;
-    border-bottom: 1px solid $secondary-color;
-
-
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .2);
+    
     & .logo {
       position: absolute;
       width: 0;
@@ -42,12 +41,12 @@
     }
 
     & .search {
+      width: 50%;
       margin: 0 auto;
       flex-grow: 0;
     }
 
     & .cart {
-      margin-left: auto;
       order: 3;
     }
 
@@ -72,10 +71,10 @@
 }
 
 .search {
-  display: flex;
   position: relative;
+  display: flex;
   align-items: center;
-  flex-grow: 1;
+  width: 100%;
   margin-top: 10px;
 
   &__bar {
@@ -104,17 +103,19 @@
 .user-bar {
   display: flex;
   align-items: center;
+  padding: 5px 20px;
   cursor: pointer;
+  background-color: $secondary-color;
 
   &__icon {
+    color: $light-color;
     margin-right: 15px;
   }
 
-  &__photo {
-    display: none;
-  }
-
   &__name {
+    font-size: 1.1rem;
+    font-family: 'Cuprum', sans-serif;
+    color: $light-color;
   }
 }
 
@@ -139,27 +140,18 @@
 
 .phone {
   display: flex;
-  flex-direction: column;
-
-  &__number {
-    color: currentColor;
-  }
-
-  &__number + * {
-    margin-top: 20px;
-  }
-
+  align-items: center;
+  color: currentColor;
 
   &__icon {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 10px;
+    margin-right: .3rem;
     fill: currentColor;
   }
 
 
   &__text {
+    min-width: 9.5rem;
     font-family: 'Cuprum', sans-serif;
-    font-size: 20px;
+    font-size: 1.2rem;
   }
 }

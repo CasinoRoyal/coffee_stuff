@@ -17,6 +17,10 @@ body {
   background-color: $main-background;
 }
 
+main > section:not(:last-child) {
+  margin-bottom: 50px;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -58,16 +62,23 @@ img {
 }
 
 .icon {
+  fill: currentColor;
   width: 25px;
 }
 
 
 .title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-family: 'Cuprum', sans-serif;
+  font-size: 1.7rem;
   font-weight: 500;
-  color: $title-color; 
+  color: $title-color;
+
+  &--small {
+    margin-bottom: 0;
+    font-size: 1.25rem;
+  }
 
   &--square {
     display: inline-block;
@@ -93,6 +104,7 @@ img {
   }
 }
 
-main > section {
-  margin-bottom: 50px;
+.text {
+  font-size: 0.88rem;
+  color: $text-color;
 }
