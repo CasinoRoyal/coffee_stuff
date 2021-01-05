@@ -1,0 +1,42 @@
+.schedule {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    margin-bottom: 1rem;
+    color: $light-color;
+  }
+
+  &__time {
+    min-width: 7.5rem;
+    font-family: 'Cuprum', sans-serif;
+
+    &:not(:last-child) {
+      margin-bottom: .2rem;
+    }
+  }
+
+  &__days {
+    display: inline-flex;
+    width: 3rem;
+    font-size: 1rem;
+    color: $light-color;
+  }
+
+  &__hours {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: $primary-color;
+  }
+
+  &__minutes {
+    font-size: 0.8rem;
+    color: $primary-color;
+  }
+
+  &__holiday {
+    font-size: 1.1rem;
+    color: tomato;
+  }
+}

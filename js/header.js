@@ -3,8 +3,6 @@ const header = document.querySelector('.header');
 
 const observer = new IntersectionObserver((entries, observer) => {
   entries.forEach(entry => {
-      console.log(entry.intersectionRatio)
-      console.log(entry)
       if (entry.intersectionRatio === 0) {
         header.classList.add('header--sticky');
       } 

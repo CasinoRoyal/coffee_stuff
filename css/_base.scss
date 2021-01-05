@@ -17,8 +17,8 @@ body {
   background-color: $main-background;
 }
 
-main > section:not(:last-child) {
-  margin-bottom: 50px;
+main > section {
+  margin-bottom: 1.875rem;
 }
 
 ul {

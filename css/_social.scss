@@ -1,5 +1,9 @@
 .social {
+  display: flex;
+  flex-direction: column;
+  
   &__title {
+    font-family: 'Cuprum', sans-serif;
     margin-bottom: 20px;
     text-align: center;
     color: $primary-color;
@@ -15,7 +19,6 @@
   }
 
   &__item {
-
   }
 
   &__link {
