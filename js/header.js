@@ -11,7 +11,7 @@ const observer = new IntersectionObserver((entries, observer) => {
         header.classList.remove('header--sticky');
       }
    });
-}, { rootMargin: '5px 0px 0px 0px', threshold: [0, 1] });
+}, { rootMargin: '40px 0px 0px 0px', threshold: [0, 1] });
 
 
 observer.observe(headerTop);

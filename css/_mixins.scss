@@ -16,6 +16,6 @@
   }
 
   @else if $point == phone_L {
-     @media (min-width: 25em)  { @content ; }
+     @media (min-width: 31.25em)  { @content ; }
   }
 }

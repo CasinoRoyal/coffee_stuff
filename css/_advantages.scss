@@ -1,5 +1,5 @@
 .advantages {
-  padding: 0 10px;
+  padding: 0 0.625rem;
 
   &__list {
     display: flex;
@@ -12,10 +12,13 @@
     }
   }
 
+  &__item:not(:last-child) {
+    margin-bottom: 1.25rem;
+  }
+
   &__item {
     position: relative;
     width: 100%;
-    margin-bottom: 20px;
     padding-left: 60px;
 
     &:before {

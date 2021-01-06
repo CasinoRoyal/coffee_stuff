@@ -4,13 +4,22 @@
 
 
 .hamburger {
-  align-self: center;
   display: block;
   width: 40px;
   height: 40px;
+  align-self: center;
   
   & svg {
     fill: #111;
+  }
+
+
+  &--close + .header__info {
+    display: none;
+  }
+
+  &--open + .header__info {
+    display: block;
   }
 }
 

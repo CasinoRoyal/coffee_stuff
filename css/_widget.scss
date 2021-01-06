@@ -1,11 +1,11 @@
 .widget {
-  padding: 0 10px;
+  padding: 0 0.625rem;
 
   &__header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 15px;
+    margin-bottom: .88rem;
   }
 
   &__title {

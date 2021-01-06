@@ -8,6 +8,10 @@ html {
   height: 100vh;
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
+
+  @include breakpoint(tablet) {
+    font-size: 17px;
+  }
 }
 
 body {
@@ -15,6 +19,10 @@ body {
   flex-direction: column;
   min-height: 100%;
   background-color: $main-background;
+
+  & .sidebar--open {
+    overflow: hidden;
+  }
 }
 
 main > section {
