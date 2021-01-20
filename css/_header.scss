@@ -16,12 +16,19 @@
     display: none;
   }
 
-  &__content {
-    display: flex;
-    flex-wrap: wrap;
+  &__info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100vh;
+    z-index: 100;
+    background-color: #fff;
+    box-shadow: 1px 0px 5px 1px #00000047;
 
-    &--shrink {
-
+    & .close {
+      width: 100%;
+      text-align: right;
     }
   }
 
@@ -38,6 +45,18 @@
       font-size: 0;
       visibility: hidden;
     }
+  }
+}
+
+.header--sticky + .catalog {
+  margin-top: 44px;
+}
+
+.header--sticky ~ main {
+  margin-top: 44px;
+
+  @include breakpoint(laptop) {
+    margin-top: 0;
   }
 }
 
@@ -59,7 +78,7 @@
   display: flex;
   flex-grow: 1;
   align-items: center;
-  margin: 0 1rem;
+  margin: 0 .7rem;
 
   &__bar {
     width: 100%;
@@ -87,7 +106,7 @@
 .user-bar {
   display: flex;
   align-items: center;
-  padding: 5px 20px;
+  padding: 10px 5px;
   cursor: pointer;
   background-color: $secondary-color;
 

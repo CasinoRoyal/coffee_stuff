@@ -20,7 +20,7 @@ body {
   min-height: 100%;
   background-color: $main-background;
 
-  & .sidebar--open {
+  & > .header {
     overflow: hidden;
   }
 }
@@ -57,6 +57,7 @@ img {
   font-weight: 500;
   color: $title-color;
   background-color: transparent;
+  transition: all .35s;
   cursor: pointer;
 
   &--large {
@@ -64,8 +65,15 @@ img {
   }
 
   &--primary {
-    background: $primary-color;
+    background-color: transparent;
     color: $title-color;
+    border: 1px solid $secondary-color;
+
+    &:hover,
+    &:active {
+      background-color: $primary-color;
+      border-color: $primary-color;
+    }
   }
 }
 
