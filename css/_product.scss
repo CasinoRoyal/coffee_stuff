@@ -1,5 +1,4 @@
 .product {
-  padding: 10px;
   background-color: #fff;
 
   &__header {
@@ -14,7 +13,7 @@
     text-align: right;
     font-size: 12px;
     font-weight: 300;
-    color: #000000db;
+    color: $text-color;
     margin-left: auto;
 
     & span {
@@ -31,11 +30,6 @@
     margin-top: 10px;
     margin-bottom: 10px;
     justify-content: center;
-    background-color: #232a2ed1;
-
-    & > .btn {
-      color: #fff;
-    }
   }
 
   &__tabs {
@@ -44,12 +38,8 @@
     margin: 20px 0;
   }
 
-
-
-
-
   &__btn {
+    width: 50%;
     margin: auto;
-    padding: 10px;
   }
 }

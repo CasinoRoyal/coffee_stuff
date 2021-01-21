@@ -9,7 +9,8 @@
     height: 30px;
     padding: 5px;
     font-size: 16px;
-    background-color: #ffffff47;
+    color: $secondary-color;
+    border: 1px solid $border-light-color;
     border-radius: 3px;
 
 
@@ -20,6 +21,12 @@
     &--large {
       
     }
+
+    &:hover,
+    &:active {
+      background-color: $primary-color;
+      border-color: $primary-color;
+    }
   }
 
   &__input {
@@ -27,6 +34,6 @@
     margin: 0 10px;
     text-align: center;
     border-radius: 3px;
-    border: none;
+    border: 1px solid $border-light-color;
   }
 }

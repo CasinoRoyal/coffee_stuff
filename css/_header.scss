@@ -7,6 +7,7 @@
 .header {
   position: static;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   padding: 0 0.625rem 0.3125rem;
   background-color: $primary-color;
@@ -29,6 +30,21 @@
     & .close {
       width: 100%;
       text-align: right;
+    }
+
+    @include breakpoint(laptop) {
+      display: block !important;
+      position: relative;
+      width: auto;
+      height: auto;
+      background-color: transparent;
+      box-shadow: none;
+      z-index: 0;
+      order: 2;
+
+      & .close {
+        display: none;
+      }
     }
   }
 
@@ -65,11 +81,12 @@
   justify-content: center;
   width: 100%;
 
-  & a {
-  }
-
   &__img {
     width: 40px;
+  }
+
+  @include breakpoint(laptop) {
+    width: auto;
   }
 }
 
@@ -100,8 +117,11 @@
     border: none;
     cursor: pointer;
   }
-}
 
+  @include breakpoint(laptop) {
+    flex-grow: 0;
+  }
+}
 
 .user-bar {
   display: flex;
@@ -110,18 +130,31 @@
   cursor: pointer;
   background-color: $secondary-color;
 
-  &__icon {
+  &__link {
+    display: flex;
+    align-items: center;
     color: $light-color;
+  }
+
+  &__icon {
+    color: currentColor;
     margin-right: 15px;
   }
 
   &__name {
     font-size: 1.1rem;
     font-family: 'Cuprum', sans-serif;
-    color: $light-color;
+    color: currentColor;
+  }
+
+  @include breakpoint(laptop) {
+    background-color: transparent;
+
+    &__link {
+      color: $secondary-color;
+    }
   }
 }
-
 
 .cart {
   display: flex;
@@ -138,9 +171,12 @@
     border: none;
     cursor: pointer;
   }
+
+  @include breakpoint(laptop) {
+    margin-left: 0;
+    order: 3; 
+  }
 }
-
-
 
 .phone {
   display: flex;

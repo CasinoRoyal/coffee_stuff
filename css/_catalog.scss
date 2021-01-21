@@ -67,7 +67,9 @@
   }
 
   &--sidebar {
-
+    @include breakpoint(laptop) {
+      display: none;
+    }
   }
 
   &--close {

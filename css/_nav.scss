@@ -21,6 +21,10 @@
   &--open + .header__info {
     display: block;
   }
+
+  @include breakpoint(laptop) {
+    display: none;
+  }
 }
 
 
